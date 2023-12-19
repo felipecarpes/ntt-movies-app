@@ -1,27 +1,64 @@
-# NttMoviesApp
+# NTT Movies Library
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
+Esta aplicação consiste em uma interface que consome uma API de filmes, permitindo aos usuários filtrar os resultados de busca e visualizar detalhes específicos de cada filme selecionado.
 
-## Development server
+## Tecnologias Utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Angular
+- NGRX
+- Bootstrap
 
-## Code scaffolding
+## Funcionalidades Principais
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Listagem de filmes conforme o filtro de busca realizado pelo usuário.
+- Visualização dos detalhes de um filme selecionado.
 
-## Build
+## Instalação e Execução
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para executar a aplicação localmente, siga os passos abaixo:
 
-## Running unit tests
+1. Certifique-se de ter o Node.js versão 18.17.1, e o Angular CLI instalados em sua máquina.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Clone este repositório:
 
-## Running end-to-end tests
+    ```
+    git clone https://github.com/felipecarpes/ntt-movies-app
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Navegue até o diretório do projeto:
 
-## Further help
+    ```
+    cd ntt-movies-app
+    ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. Instale as dependências:
+
+    ```
+    npm install
+    ```
+
+5. Inicie a aplicação:
+
+    ```
+    ng serve
+    ```
+
+6. Acesse a aplicação em seu navegador utilizando o endereço:
+
+    ```
+    http://localhost:4200/
+    ```
+
+## Deploy
+
+A aplicação foi implantada na plataforma Vercel e pode ser acessada através do seguinte link:
+
+[Link da Aplicação na Vercel](URL_DA_APLICACAO)
+
+## Contribuição
+
+Sinta-se à vontade para contribuir com este projeto. Se encontrar problemas ou tiver sugestões de melhorias, abra uma issue ou envie um pull request.
+
+## Autores
+
+Felipe Carpes.
