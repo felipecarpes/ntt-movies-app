@@ -1,0 +1,65 @@
+.movie-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  .movies-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+  // .movie-poster {
+  //   width: 100%;
+  //   max-width: 300px;
+  //   margin-bottom: 20px;
+  //   @media (min-width: 768px) {
+  //     margin-right: 20px;
+  //   }
+  // }
+  // .movie-details {
+  //   width: 100%;
+  //   @media (min-width: 768px) {
+  //     width: calc(100% - 320px);
+  //   }
+  //   .movie-title {
+  //     font-size: 1.5rem;
+  //     font-weight: 700;
+  //     margin-bottom: 10px;
+  //   }
+  //   .movie-genres {
+  //     font-size: 1rem;
+  //     font-weight: 700;
+  //     margin-bottom: 10px;
+  //   }
+  //   .movie-overview {
+  //     font-size: 1rem;
+  //     font-weight: 400;
+  //     margin-bottom: 10px;
+  //   }
+  //   .movie-rating {
+  //     font-size: 1rem;
+  //     font-weight: 700;
+  //     margin-bottom: 10px;
+  //   }
+  //   .movie-release-date {
+  //     font-size: 1rem;
+  //     font-weight: 700;
+  //     margin-bottom: 10px;
+  //   }
+  // }
+}
