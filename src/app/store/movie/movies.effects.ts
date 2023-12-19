@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { of } from 'rxjs';
 import { catchError, map, mergeMap } from 'rxjs/operators';
-import { searchMovies, searchMoviesFailure, searchMoviesSuccess } from './movies.actions';
+import { searchMovies, searchMoviesFailure, searchMoviesSuccess } from '../movies/movies.actions';
 import { MovieService } from '../../services/movies.service';
 
 interface SearchResponse {
