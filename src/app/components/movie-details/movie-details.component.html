@@ -16,7 +16,7 @@
         </div>
         <div class="col col-sm-6 col-md-12 d-flex flex-column align-items-center align-items-sm-start justify-content-center">
           <button type="submit" class="btn btn-primary">
-            Favorite ❤️
+            Favorite <i class="bi bi-heart-fill"></i>
           </button>
         </div>
       </div>
@@ -25,8 +25,8 @@
       <img [src]="movie.Poster" class="img-fluid" [alt]="movie.Title">
     </div>
   </div>
-  <div class="mt-4">
-    <button class="btn btn-primary" (click)="goBack()"> ⬅️ Back</button>
+  <div class="mt-4 mb-4">
+    <button class="btn" (click)="goBack()"> <i class="bi bi-arrow-left"></i> Back</button>
   </div>
 </div>
 
