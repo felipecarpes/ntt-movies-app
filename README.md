@@ -53,7 +53,7 @@ Para executar a aplicação localmente, siga os passos abaixo:
 
 A aplicação foi implantada na plataforma Vercel e pode ser acessada através do seguinte link:
 
-[Link da Aplicação na Vercel](URL_DA_APLICACAO)
+[Link da Aplicação na Vercel](https://ntt-movies-app.vercel.app/)
 
 ## Contribuição
 
