@@ -14,7 +14,8 @@ export class MovieDetailsService {
   getMovieDetails(movieId: string): Observable<any> {
     const params = new HttpParams()
       .set('apikey', environment.apiKey)
-      .set('i', movieId);
+      .set('i', movieId)
+      .set('plot', 'full');
 
     return this.http.get<any>(environment.apiUrl, { params });
   }

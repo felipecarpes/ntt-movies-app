@@ -6,15 +6,16 @@
 
   <div *ngIf="error$ | async as error">Erro ao carregar filmes: {{ error }}</div>
 
-  <div *ngIf="(showMovieDetails$ | async); else movieList">
-    <app-movie-details [movie]="movieDetails$ | async"></app-movie-details>
-  </div>
-  <ng-template #movieList>
-    <div class="row pt-4 px-4 text-center" *ngIf="movies$ && (movies$ | async) as movies" #movieList>
-      <div class="col-md-3 col-sm-12" *ngFor="let movie of movies">
-        <app-movie-card [movie]="movie"></app-movie-card>
-      </div>
+  <div *ngIf="!!loading$">
+    <div *ngIf="(showMovieDetails$ | async); else movieList">
+      <app-movie-details [movie]="movieDetails$ | async"></app-movie-details>
     </div>
-  </ng-template>
-
+    <ng-template #movieList>
+      <div class="container row pt-4 px-4 text-center" *ngIf="movies$ && (movies$ | async) as movies" #movieList>
+        <div class="col-md-3 col-sm-12" *ngFor="let movie of movies">
+          <app-movie-card [movie]="movie"></app-movie-card>
+        </div>
+      </div>
+    </ng-template>
+  </div>
 </div>

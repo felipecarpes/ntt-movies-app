@@ -1,18 +1,14 @@
-<div class="container mt-3 ms-2">
-  <div class="row justify-content-center">
-    <div class="col col-12 col-sm-12 col-md-12">
+<div class="container mt-3">
+    <div class="container col-12 mb-3">
       <h4>Movies Library</h4>
     </div>
-    <div class="col col-12 col-sm-12 col-md-12">
-      <div class="row">
-        <div class="col col-12 col-sm-12 col-md-10 my-2">
-          <input type="text" [(ngModel)]="searchQuery" placeholder="Ex: Avengers" class="form-control" name="searchQuery">
-        </div>
-        <div class="col col-12 col-sm-12 col-md-2 text-sm-end my-2 d-flex flex-row justify-content-start gap-2">
-          <button class="btn btn-primary" (click)="search()">Search</button>
-          <button class="btn btn-primary" (click)="clear()">Reset</button>
-        </div>
+    <div class="container row row-cols-lg-auto g-3 align-items-center">
+      <div class="col-12">
+        <input type="text" [(ngModel)]="searchQuery" placeholder="Ex: Avengers" class="form-control" name="searchQuery">
+      </div>
+      <div class="col-6">
+        <button class="btn btn-primary me-2" (click)="search()">Search</button>
+        <button class="btn btn-primary" (click)="clear()">Reset</button>
       </div>
     </div>
-  </div>
 </div>
