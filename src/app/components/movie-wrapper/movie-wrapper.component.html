@@ -2,11 +2,17 @@
 <div class="container pb-5">
   <app-search-bar></app-search-bar>
 
-  <div class="row pt-4 px-4 text-center" *ngIf="loading$ | async">Carregando...</div>
+  <div lass="row row-cols-auto justify-content-center pt-4 px-4" *ngIf="loading$ | async">
+    <div class="col text-center mt-4">
+      <div class="spinner-border text-primary mt-4" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </div>
 
   <div *ngIf="error$ | async as error">Erro ao carregar filmes: {{ error }}</div>
 
-  <div *ngIf="(showMovieDetails$ | async); else movieList">
+  <div *ngIf="(showMovieDetails$ | async) && !loading$; else movieList">
     <app-movie-details [movie]="movieDetails$ | async"></app-movie-details>
   </div>
   <ng-template #movieList>
