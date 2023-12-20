@@ -12,7 +12,7 @@
 
   <div *ngIf="error$ | async as error">Erro ao carregar filmes: {{ error }}</div>
 
-  <div *ngIf="(showMovieDetails$ | async) && !loading$; else movieList">
+  <div *ngIf="(showMovieDetails$ | async); else movieList">
     <app-movie-details [movie]="movieDetails$ | async"></app-movie-details>
   </div>
   <ng-template #movieList>
